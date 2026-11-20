@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloading Soft School...</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px 20px; }
+    a { color: #17716a; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Your download is starting...</h2>
+  <p>You will go back to our website in a few seconds.</p>
+  <p><a href="softschool.apk" download>Tap here if the download doesn't start</a></p>
+
+  <script>
+    // CHANGE THIS to your website address
+    var siteUrl = "https://YOUR-WEBSITE.com/";
+
+    // The APK is in the same repo, so a simple relative link works
+    window.location.href = "softschool.apk";
+    setTimeout(function () { window.location.href = siteUrl; }, 6000);
+  </script>
+</body>
+</html>
